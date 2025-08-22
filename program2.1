@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMZ37913HsBUgaZTcS/gj/Q",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/saudyusaf/data-science/blob/main/program2.1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O5WvJVSR2E3X",
+        "outputId": "002f3f69-df51-474b-bbee-b254b24a98f5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mean: 5.5\n",
+            "Median: 5.5\n",
+            "Standard Deviation: 2.8722813232690143\n",
+            "Minimum value: 1\n",
+            "Maximum value: 10\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "matrix1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n",
+        "matrix2 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])\n",
+        "matrix_sum = matrix1 + matrix2\n",
+        "matrix_diff = matrix1 - matrix2\n",
+        "matrix_product = matrix1 * matrix2\n",
+        "matrix_divide = matrix1 / matrix2\n",
+        "matrix_multiply = np.dot(matrix1, matrix2)\n",
+        "matrix1_transpose = np.transpose(matrix1)\n",
+        "diagonal_sum = np.trace(matrix1)\n",
+        "print(\"Matrix 1:\\n\", matrix1)\n",
+        "print(\"Matrix 2:\\n\", matrix2)\n",
+        "print(\"Matrix Sum:\\n\", matrix_sum)\n",
+        "print(\"Matrix Difference:\\n\", matrix_diff)\n",
+        "print(\"Matrix Element-wise Product:\\n\", matrix_product)\n",
+        "print(\"Matrix Element-wise Division:\\n\", matrix_divide)\n",
+        "print(\"Matrix Multiplication:\\n\", matrix_multiply)\n",
+        "print(\"Transpose of Matrix 1:\\n\", matrix1_transpose)\n",
+        "print(\"Sum of Diagonal Elements of Matrix 1:\", diagonal_sum)"
+      ]
+    }
+  ]
+}
